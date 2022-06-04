@@ -22,8 +22,8 @@ def get_movies_by_rating(category):
     return jsonify(movies_by_rating(category))
 
 @app.route("/genre/<genre>")
-def get_movies_by_ganre(genre):
-    return jsonify(movies_by_ganre(genre))
+def get_movies_by_genre(genre):
+    return jsonify(movies_by_genre(genre))
 
 if __name__ == "__main__":
     app.run (debug=True)
